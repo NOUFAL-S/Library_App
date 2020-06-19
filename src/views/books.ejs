@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+</head>
+  <body>
+    <!---Navigation bar-->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.jpg"</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="https://openlibrary.org/navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <%for(i=0;i<nav.length;i++){%>
+
+              <li class="nav-item ">
+                
+                              <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              </li>
+             
+              <%}%>
+            
+          </ul>
+        </div>
+      </nav>
+      <br>
+    </section>
+
+    <div id="heading" class="container">
+      
+            <div class="card-deck bg-dark">
+            
+              <header><h3>Classic books</h3></header>
+                <div class="card">
+                  
+                  <img src="images/b1.jpg" width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/b2.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/b3.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                   
+                  </div>
+                </div>
+              </div><br>
+              <div class="card-deck bg-primary">
+                <header><h3>Book we love</h3></header>
+                <div class="card">
+                  <img src="images/c1.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/c2.jpg" width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/c3.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                   
+                  </div>
+                </div>
+              </div><br>
+              <div class="card-deck bg-danger">
+                <header><pre><h3><b>Kids  books</b></h3></pre></header>
+                <div class="card">
+                  <img src="images/k1.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/k2.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/k3.jpg"  width="200px" height="300cm" class="card-img-top" alt="image">
+                  <div class="card-body">
+                    <a href="https://openlibrary.org/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">READ ME</a>
+<a href="https://openlibrary.org/" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ABOUT AUTHOR</a>
+                   
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+           
+        
+         
+      
+      <br>
+      <div class="footer">
+   <b>copyright@2020</b>
+</div>
+     
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
