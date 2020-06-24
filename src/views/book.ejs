@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%=title%></title>
-    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="../css/about-us.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,7 +19,7 @@
     <!---Navigation bar-->
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#"><img src="images/logo.jpg"</a>
+        <a class="navbar-brand" href="#"><img src="../images/logo.jpg"</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,27 +45,37 @@
           </ul>
         </div>
       </nav>
-      <br>
-    </section>
+      <div class="container " style="width: max-content;">
+        <div class="row "style="height:50px"></div>
+<h1 style=" text-align: center; color: rgb(226, 226, 226);font-family: fantasy;text-decoration: underline;font-size: 80px;">
+BOOK
+</h1>
 
-    <div class="container sl">
-     
-       <div class="row">
-      <%for(i=0;i<books.length;i++){%>
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-           <img src="/images/<%=books[i].img%>" class="img-fluid" alt="...">
-           <div class="card-body">
-            
-            
-             <p class="card-text"><a href="/books/<%=i%>">...read more</a></p>
-           </div>                   
-          </div>                    
-        </div>
-        <% } %>
-      </div>       
-    </div>
+
+
+
+<div class="card mb-8" style="height: 500px;width: auto;" >
   
+  <div class="row">
+    <div class="  col-md-4">
+      <img src="/images/<%=book.img%>" class="img-fluid" alt="...">
+    </div>
+    <div class="cam col-md-6">
+      <div class="card-body" style="margin-right: 3px;">
+          
+        <p class="card-text"><h3><%=book.Description%></h3></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+        </div>
+
             
       <div class="footer">
    <b>copyright@2020</b>

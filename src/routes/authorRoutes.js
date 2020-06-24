@@ -42,14 +42,7 @@ function router(nav){
     
      });
     
-    authorsRouter.get('/:i',function(req,res){
-        const i =req.params.i;
-        res.render('book',
-        {
-            nav,            title:'Library',
-            authors : authors[i]
-        });
-    });
+   
     
   return authorsRouter;  
 }
